@@ -50,7 +50,8 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
     # BASE_DIR / "frontend/build/static"
     ]
-MEDIA_ROOT = "static/images"
+MEDIA_ROOT = BASE_DIR / "static/images"
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 
 
@@ -68,8 +69,9 @@ python manage.py runserver
 # at this point your backend sever is running and connected to the postgres database locally. 
 # link pgAdmin to database
 python manage.py createsuperuser
-melowise5@gmail.com
-1949---
+userName: who_owns
+email: melowise5@gmail.com
+pass: 1949---
 
 open pgAdmin4
 view/edit data > All Rows
